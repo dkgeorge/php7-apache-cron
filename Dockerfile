@@ -104,7 +104,7 @@ ADD crons.conf /var/www/crons.conf
 
 # Use the crontab file..
 RUN crontab /var/www/crons.conf
-
+RUN service cron start
 WORKDIR /var/www/html
 
 EXPOSE 80
